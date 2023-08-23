@@ -22,5 +22,18 @@ public class Variables {
         int b = 20;
         System.out.println(a);
         System.out.println(b);
+
+        /*
+                float -> Store decimal numbers (10.15, 10.20, etc)
+                We need to write f at the end of value
+         */
+        float ab = 10.25f;
+        System.out.println(ab);
+
+        /*
+                boolean -> true and false
+         */
+        boolean ba = false;
+        System.out.println(ba);
     }
 }
