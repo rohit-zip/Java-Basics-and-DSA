@@ -1,24 +1,19 @@
 package Basics;
 
-import java.util.Scanner;
+import java.security.SecureRandom;
+import java.util.Base64;
 
 public class MathMethods {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-
-        String result = mathMethod(a, b);
-        System.out.println(result);
+        byte[] ivBytes = generateRandomIV();
+        String ivBase64 = Base64.getEncoder().encodeToString(ivBytes);
+        System.out.println("IV (Base64): " + ivBase64);
     }
 
-    public static String mathMethod(int a, int b){
-        int addition = a + b;
-        int subtraction = a - b;
-        int multiplication = a * b;
-        int division = a / b;
-//        String str = "Addition : " + addition + " || Subtraction : " + subtraction + " || Multiplication : " + multiplication + " || Division : " + division;
-        String str = "Addition : " + addition + " \n" + "Subtraction : " + subtraction + "\n";
-        return str;
+    public static byte[] generateRandomIV() {
+        SecureRandom random = new SecureRandom();
+        byte[] iv = new byte[16];
+        random.nextBytes(iv);
+        return iv;
     }
 }
