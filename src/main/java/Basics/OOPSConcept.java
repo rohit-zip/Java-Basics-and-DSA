@@ -27,12 +27,12 @@ package Basics;
  * Abstraction -> Only showing essential data to users (abstract class and interfaces)
  *
  */
- public class OOPS {
+ public class OOPSConcept {
 
      int a = 20;
 
     public static void main(String[] args) {
-        OOPS op = new OOPS(); //Object creation
+        OOPSConcept op = new OOPSConcept(); //Object creation
         System.out.println(op.a);
         op.sum(10);
     }
