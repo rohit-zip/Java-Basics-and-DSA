@@ -19,6 +19,9 @@ public class MaxMin {
         }
         return min;
     }
+
+
+
     public static void main(String[] args) {
         System.out.println(min(new int[]{1, 2, 4, 8, 5}));
     }
