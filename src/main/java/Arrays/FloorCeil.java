@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class FloorCeil {
     public static void main(String[] args) {
-        int[] array = {20, 40, 50, 60, 70};
+        int[] array = {20, 40, 50, 60, 70, 80, 100, 110};
         Scanner sc = new Scanner(System.in);
         int data = sc.nextInt();
         int low = 0;
