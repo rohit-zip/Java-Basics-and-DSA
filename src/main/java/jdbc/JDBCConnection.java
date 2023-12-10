@@ -1,6 +1,6 @@
 package jdbc;
 
-import com.mysql.cj.jdbc.ConnectionImpl;
+//import com.mysql.cj.jdbc.ConnectionImpl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
