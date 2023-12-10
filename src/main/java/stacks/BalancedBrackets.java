@@ -58,7 +58,6 @@ public class BalancedBrackets {
         }
         else {
             System.out.println(false);
-
         }
     }
 }
