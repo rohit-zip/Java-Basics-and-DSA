@@ -16,7 +16,7 @@ public class KeypadCombinations {
     static String[] codes = {".;", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
 
     public static ArrayList<String> getCombinations(String data) {
-        if (data.length() == 0) {
+        if (data.isEmpty()) {
             ArrayList<String> ar = new ArrayList<>();
             ar.add("");
             return ar;
